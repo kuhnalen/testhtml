@@ -102,9 +102,42 @@
 
 <body>
 
-  <my-header></my-header>
+  <header>      
+        <div class="headerne">    
+            <div class="logomenu">
+                <p class="logo"><img src="../image/tvlogo-removebg-preview.png" alt="muthulogo"> Tamilmuthu </p>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="https://tamilmuthu.com/">Home</a></li>
+                    <li><a href="https://tamilmuthu.com/tamil">Tamil</a></li>
+                    <li><a href="https://tamilmuthu.com/hindi">Hindi</a></li>
+                    <li><a href="https://tamilmuthu.com/sinhala">Sinhala</a></li>
+                    <li><a href="https://tamilmuthu.com/malayalam">Malayalam</a></li>
+                    <li><a href="https://tamilmuthu.com/favorites">Favorite</a></li>
+                    <li><a href="https://tamilmuthu.com/all-tamil-fm-in-one-place">All In One</a></li>        
+                </ul>
+            </nav>
+            
+            <label for="nav-toggle" class="nav-toggle-label"> 
+                <span>&#9776;</span>    
+            </label>
 
-  <notification> </notification>
+            <div class="menu-icon">
+                <a href="https://tamilmuthu.com/favorites"><i class="far fa-heart"></i></a>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <span class="ball"></span>
+                </label>
+            </div>      
+        </div>      
+    </header>
+    <script>
+        document.getElementById('checkbox').addEventListener('change', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 
   <div class="centercontainer">
 
